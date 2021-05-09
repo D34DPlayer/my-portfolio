@@ -8,8 +8,9 @@
         class="col-12 col-lg-6 px-16 d-flex justify-center align-center text-justify"
       >
         <p>
-          Motivated student in <span>information technology</span>, I have practical
-          experience in <span>backend</span> and <span>frontend</span> development acquired during various
+          Motivated student in <span>information technology</span>, I have
+          practical experience in <span>backend</span> and
+          <span>frontend</span> development acquired during various
           <span>projects</span> and <span>trainings</span>.
         </p>
       </div>
@@ -21,7 +22,12 @@
         ></v-img>
         <div class="d-flex flex-column justify-center text-body-1 about-items">
           <div><span>Location:</span> Belgium</div>
-          <div><span>Email:</span> <a href="mailto:carlosemilianorh@hotmail.com">carlosemilianorh@hotmail.com</a></div>
+          <div>
+            <span>Email:</span>
+            <a href="mailto:carlosemilianorh@hotmail.com"
+              >carlosemilianorh@hotmail.com</a
+            >
+          </div>
           <div><span>Phone:</span> (+32)483 29 23 31</div>
           <div class="pb-2">
             <a
@@ -102,16 +108,14 @@
     <v-row class="px-5">
       <v-col cols="12" md="6">
         <v-card href="https://github.com/AH-REM/discord-noob" class="proj-card">
-          <v-card-title>
-            DiscordNoob
-          </v-card-title>
+          <v-card-title> DiscordNoob </v-card-title>
           <v-card-subtitle>Uses Discord.js</v-card-subtitle>
           <v-card-text>
             Small Discord.js Framework.
-            <br/>
+            <br />
             Based on Discord.js, it allows users without any developement
             experience to setup a highly customizable bot that fits their needs.
-            <br/>
+            <br />
             This is achieved thanks to a wide collection of modules that can be
             assembled any way you want, which also allows other developers to
             expand this framework by creating new modules.
@@ -119,20 +123,21 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-card href="https://github.com/D34DPlayer/Projet-Muziek" class="proj-card">
-          <v-card-title>
-            Muziek
-          </v-card-title>
+        <v-card
+          href="https://github.com/D34DPlayer/Projet-Muziek"
+          class="proj-card"
+        >
+          <v-card-title> Muziek </v-card-title>
           <v-card-subtitle>
             Uses Python, Kivy and the Youtube API
           </v-card-subtitle>
           <v-card-text>
             Python CLI and GUI application.
-            <br/>
+            <br />
             Allows you to keep track and manage your local music library.
-            <br/>
+            <br />
             Users can register new groups, albums, songs and playlists.
-            <br/>
+            <br />
             If a YT link is provided, it can download the songs locally, export
             playlist to your YT account and even import YT playlists.
           </v-card-text>
@@ -141,34 +146,38 @@
     </v-row>
     <v-row class="pb-5 px-5">
       <v-col cols="12" md="6">
-        <v-card href="https://github.com/D34DPlayer/MuziekDownloader" class="proj-card">
-          <v-card-title>
-            MuziekDownloader
-          </v-card-title>
+        <v-card
+          href="https://github.com/D34DPlayer/MuziekDownloader"
+          class="proj-card"
+        >
+          <v-card-title> MuziekDownloader </v-card-title>
           <v-card-subtitle>
             Uses Python, Django, Materialize and the Youtube API.
           </v-card-subtitle>
           <v-card-text>
             Python Web application.
-            <br/>
+            <br />
             Allows you to download songs from Youtube, and thanks to a form to
             provide the song's metadata.
-            <br/>
+            <br />
             The song handling is done server-side and the user has just to
             download the prepared song.
-            <br/>
+            <br />
             Users can check the recently downloaded song and search if someone
             has already provided the metadata for the song they are looking for.
           </v-card-text>
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-card href="https://github.com/D34DPlayer/my-portfolio" class="proj-card">
+        <v-card
+          href="https://github.com/D34DPlayer/my-portfolio"
+          class="proj-card"
+        >
           <v-card-title> This portfolio</v-card-title>
           <v-card-subtitle> Uses Vue and Vuetify.</v-card-subtitle>
           <v-card-text>
             Dynamic website.
-            <br/>
+            <br />
             Not much to say, just look around ^^.
           </v-card-text>
         </v-card>
