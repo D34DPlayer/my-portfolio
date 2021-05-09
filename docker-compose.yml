@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        - VUE_APP_DOMAIN_NAME=www.d34d.fun
+    ports:
+      - "8081:8080"
+    restart: unless-stopped

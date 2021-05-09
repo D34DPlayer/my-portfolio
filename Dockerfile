@@ -1,6 +1,6 @@
 # build stage
 FROM node:lts as build-stage
-WORKDIR /
+WORKDIR /app
 ## WILL BE USEFUL IF I ADD PRE-RENDERING
 #ARG VUE_APP_DOMAIN_NAME=localhost
 #RUN apt-get update && \
