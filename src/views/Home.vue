@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <Header />
+    <ContentFR v-if="language === 'fr'" />
+    <ContentEN v-else />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import ContentEN from "@/components/ContentEN";
+import ContentFR from "@/components/ContentFR";
+import Header from "@/components/Header";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    ContentEN,
+    ContentFR,
+    Header,
+  },
+  computed: {
+    language() {
+      return this.$vuetify.lang;
+    },
   },
 };
 </script>
