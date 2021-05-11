@@ -3,17 +3,13 @@
     <h2 id="about" class="text-h2 pb-5">
       <router-link to="/#about">About me</router-link>
     </h2>
-    <v-row class="pb-10 px-5 text-body-1 about">
-      <div
-        class="col-12 col-lg-6 px-16 d-flex justify-center align-center text-justify"
-      >
-        <p>
-          Motivated student in <span>information technology</span>, I have
-          practical experience in <span>backend</span> and
-          <span>frontend</span> development acquired during various
-          <span>projects</span> and <span>trainings</span>.
-        </p>
-      </div>
+    <v-row align="center" class="pb-10 px-5 text-body-1 about">
+      <v-col class="col-12 col-lg-6 px-16 text-justify">
+        Motivated student in <span>information technology</span>, I have
+        practical experience in <span>backend</span> and
+        <span>frontend</span> development acquired during various
+        <span>projects</span> and <span>trainings</span>.
+      </v-col>
       <v-row class="justify-center col-12 col-lg-6">
         <v-img
           src="@/assets/me-better.jpg"
@@ -134,7 +130,7 @@
           <v-card-text>
             Python CLI and GUI application.
             <br/>
-            Allows you to keep track and manage your local music library.
+            Allows you to manage and increase your local music library.
             <br/>
             Users can register new groups, albums, songs and playlists.
             <br/>
