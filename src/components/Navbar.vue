@@ -115,12 +115,12 @@ export default {
         icon: mdiHumanHandsup,
         id: "#activities",
       },
-      {
+      /*{
         titleEn: "Hobbies",
         titleFr: "Hobbies",
         icon: mdiSoccer,
         id: "#hobbies",
-      },
+      },*/
     ],
     me,
     mdiLightbulb,

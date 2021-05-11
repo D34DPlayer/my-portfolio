@@ -25,7 +25,7 @@
           <div>
             <span>Email:</span>
             <a href="mailto:carlosemilianorh@hotmail.com"
-              >carlosemilianorh@hotmail.com</a
+            >carlosemilianorh@hotmail.com</a
             >
           </div>
           <div><span>Phone:</span> (+32)483 29 23 31</div>
@@ -33,7 +33,7 @@
             <a
               href="https://www.linkedin.com/in/carlos-ruiz-herrera/"
               target="_blank"
-              >LinkedIn</a
+            >LinkedIn</a
             >
           </div>
           <v-btn href="/CV_EN.pdf" target="_blank">CV</v-btn>
@@ -108,14 +108,14 @@
     <v-row class="px-5">
       <v-col cols="12" md="6">
         <v-card href="https://github.com/AH-REM/discord-noob" class="proj-card">
-          <v-card-title> DiscordNoob </v-card-title>
+          <v-card-title> DiscordNoob</v-card-title>
           <v-card-subtitle>Uses Discord.js</v-card-subtitle>
           <v-card-text>
             Small Discord.js Framework.
-            <br />
+            <br/>
             Based on Discord.js, it allows users without any developement
             experience to setup a highly customizable bot that fits their needs.
-            <br />
+            <br/>
             This is achieved thanks to a wide collection of modules that can be
             assembled any way you want, which also allows other developers to
             expand this framework by creating new modules.
@@ -127,17 +127,17 @@
           href="https://github.com/D34DPlayer/Projet-Muziek"
           class="proj-card"
         >
-          <v-card-title> Muziek </v-card-title>
+          <v-card-title> Muziek</v-card-title>
           <v-card-subtitle>
             Uses Python, Kivy and the Youtube API
           </v-card-subtitle>
           <v-card-text>
             Python CLI and GUI application.
-            <br />
+            <br/>
             Allows you to keep track and manage your local music library.
-            <br />
+            <br/>
             Users can register new groups, albums, songs and playlists.
-            <br />
+            <br/>
             If a YT link is provided, it can download the songs locally, export
             playlist to your YT account and even import YT playlists.
           </v-card-text>
@@ -150,19 +150,19 @@
           href="https://github.com/D34DPlayer/MuziekDownloader"
           class="proj-card"
         >
-          <v-card-title> MuziekDownloader </v-card-title>
+          <v-card-title> MuziekDownloader</v-card-title>
           <v-card-subtitle>
             Uses Python, Django, Materialize and the Youtube API.
           </v-card-subtitle>
           <v-card-text>
             Python Web application.
-            <br />
+            <br/>
             Allows you to download songs from Youtube, and thanks to a form to
             provide the song's metadata.
-            <br />
+            <br/>
             The song handling is done server-side and the user has just to
             download the prepared song.
-            <br />
+            <br/>
             Users can check the recently downloaded song and search if someone
             has already provided the metadata for the song they are looking for.
           </v-card-text>
@@ -177,7 +177,7 @@
           <v-card-subtitle> Uses Vue and Vuetify.</v-card-subtitle>
           <v-card-text>
             Dynamic website.
-            <br />
+            <br/>
             Not much to say, just look around ^^.
           </v-card-text>
         </v-card>
@@ -187,33 +187,83 @@
     <h2 id="certs" class="text-h2 pb-5">
       <router-link to="/#certs">Certifications</router-link>
     </h2>
-    <h3 class="text-h4">Python</h3>
-    <ul>
-      <li>Python Basics</li>
-      <li>Python Intermediate</li>
-      <li>Django</li>
-    </ul>
-
-    <h3 class="text-h4">Data Analysis</h3>
-    <ul>
-      <li>Probabilities</li>
-      <li>Data description and filtering</li>
-    </ul>
-
-    <h3 class="text-h4">Web Development</h3>
-    <ul>
-      <li>Node.js basics</li>
-      <li>Sass</li>
-      <li>REST APIs</li>
-    </ul>
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>Python</v-card-title>
+          <v-list>
+            <v-list-item href="/python_1.pdf" target="_blank">
+              <v-list-item-content>Python Basics</v-list-item-content>
+            </v-list-item>
+            <v-list-item href="/python_2.pdf" target="_blank">
+              <v-list-item-content>Python Intermediate</v-list-item-content>
+            </v-list-item>
+            <v-list-item href="/python_3.pdf" target="_blank">
+              <v-list-item-content>Django</v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-col>
+      <v-col>
+        <v-card>
+          <v-card-title>Web Development</v-card-title>
+          <v-list>
+            <v-list-item href="/web_1.pdf" target="_blank">
+              <v-list-item-content>Node.js basics</v-list-item-content>
+            </v-list-item>
+            <v-list-item href="/web_2.pdf" target="_blank">
+              <v-list-item-content>Sass</v-list-item-content>
+            </v-list-item>
+            <v-list-item href="/web_3.pdf" target="_blank">
+              <v-list-item-content>REST APIs</v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-col>
+      <v-col>
+        <v-card>
+          <v-card-title>Data Analysis</v-card-title>
+          <v-list>
+            <v-list-item href="/data_1.pdf" target="_blank">
+              <v-list-item-content>Probabilities</v-list-item-content>
+            </v-list-item>
+            <v-list-item href="/data_2.pdf" target="_blank">
+              <v-list-item-content>Data description and filtering</v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-col>
+    </v-row>
 
     <h2 id="activities" class="text-h2 py-5">
       <router-link to="/#activities">Activities</router-link>
     </h2>
-
-    <h2 id="hobbies" class="text-h2 pb-5">
+    <v-row>
+      <v-col cols="4">
+        <v-card href="Hacktoberfest.pdf" target="_blank">
+          <v-card-title>Hacktoberfest 2020</v-card-title>
+          <v-card-text>
+            Yearly open source event whose objective is to support open source
+            projects and incentivise contribution.
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <!-- TODO
+    <h2 id="hobbies" class="text-h2 py-5">
       <router-link to="/#hobbies">Hobbies</router-link>
     </h2>
+    <v-row>
+      <v-col cols="4">
+        <v-card>
+          <v-card-title>Title</v-card-title>
+          <v-card-text>
+            Description.
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    -->
   </v-container>
 </template>
 
@@ -239,6 +289,7 @@ export default {
   .about {
     max-width: 65rem;
     margin: auto;
+
     span {
       color: #f57212;
     }
@@ -251,6 +302,7 @@ export default {
   .about-items {
     padding-left: 2rem;
     margin-left: -1rem;
+
     a:hover {
       color: #db6c1c;
     }
