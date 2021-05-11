@@ -21,7 +21,7 @@
           <div>
             <span>Email:</span>
             <a href="mailto:carlosemilianorh@hotmail.com"
-            >carlosemilianorh@hotmail.com</a
+              >carlosemilianorh@hotmail.com</a
             >
           </div>
           <div><span>Phone:</span> (+32)483 29 23 31</div>
@@ -29,7 +29,7 @@
             <a
               href="https://www.linkedin.com/in/carlos-ruiz-herrera/"
               target="_blank"
-            >LinkedIn</a
+              >LinkedIn</a
             >
           </div>
           <v-btn href="/CV_EN.pdf" target="_blank">CV</v-btn>
@@ -108,10 +108,10 @@
           <v-card-subtitle>Uses Discord.js</v-card-subtitle>
           <v-card-text>
             Small Discord.js Framework.
-            <br/>
+            <br />
             Based on Discord.js, it allows users without any developement
             experience to setup a highly customizable bot that fits their needs.
-            <br/>
+            <br />
             This is achieved thanks to a wide collection of modules that can be
             assembled any way you want, which also allows other developers to
             expand this framework by creating new modules.
@@ -129,11 +129,11 @@
           </v-card-subtitle>
           <v-card-text>
             Python CLI and GUI application.
-            <br/>
+            <br />
             Allows you to manage and increase your local music library.
-            <br/>
+            <br />
             Users can register new groups, albums, songs and playlists.
-            <br/>
+            <br />
             If a YT link is provided, it can download the songs locally, export
             playlist to your YT account and even import YT playlists.
           </v-card-text>
@@ -152,13 +152,13 @@
           </v-card-subtitle>
           <v-card-text>
             Python Web application.
-            <br/>
+            <br />
             Allows you to download songs from Youtube, and thanks to a form to
             provide the song's metadata.
-            <br/>
+            <br />
             The song handling is done server-side and the user has just to
             download the prepared song.
-            <br/>
+            <br />
             Users can check the recently downloaded song and search if someone
             has already provided the metadata for the song they are looking for.
           </v-card-text>
@@ -173,7 +173,7 @@
           <v-card-subtitle> Uses Vue and Vuetify.</v-card-subtitle>
           <v-card-text>
             Dynamic website.
-            <br/>
+            <br />
             Not much to say, just look around ^^.
           </v-card-text>
         </v-card>
@@ -224,7 +224,9 @@
               <v-list-item-content>Probabilities</v-list-item-content>
             </v-list-item>
             <v-list-item href="/data_2.pdf" target="_blank">
-              <v-list-item-content>Data description and filtering</v-list-item-content>
+              <v-list-item-content
+                >Data description and filtering</v-list-item-content
+              >
             </v-list-item>
           </v-list>
         </v-card>

@@ -66,7 +66,7 @@ import {
   mdiSchool,
   mdiHammerWrench,
   mdiCertificate,
-  mdiSoccer,
+  //mdiSoccer,
   mdiHumanHandsup,
   mdiLightbulb,
   mdiEarth,

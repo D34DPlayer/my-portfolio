@@ -29,7 +29,7 @@
             <a
               href="https://www.linkedin.com/in/carlos-ruiz-herrera/"
               target="_blank"
-            >LinkedIn</a
+              >LinkedIn</a
             >
           </div>
           <v-btn href="/CV_FR.pdf" target="_blank">CV</v-btn>
@@ -86,10 +86,11 @@
           <v-card-subtitle>Utilise Discord.js</v-card-subtitle>
           <v-card-text>
             Petit Framework Discord.js.
-            <br/>
-            Basé sur Discord.js, il permet aux utilisateurs sans aucune expérience dans la programmation
-            de mettre en place un bot hautement customizable configuré pour leurs besoins.
-            <br/>
+            <br />
+            Basé sur Discord.js, il permet aux utilisateurs sans aucune
+            expérience dans la programmation de mettre en place un bot hautement
+            customizable configuré pour leurs besoins.
+            <br />
             Ceci est accompli avec l'aide d'une grande collection de modules qui
             peuvent être assemblés de différentes façon, ce qui permet aussi à
             d'autres développeurs de étendre le framework en créant des modules
@@ -108,15 +109,15 @@
           </v-card-subtitle>
           <v-card-text>
             Application CLI et GUI Python.
-            <br/>
+            <br />
             Permet de gérer et agrandir ta libraire musicale locale.
-            <br/>
-            Les utilisateurs peuvent enregistrer des nouveaux groupes,
-            albums, chansons et des playlists.
-            <br/>
-            Si un lien YT est fourni, l'application peut télécharger les chansons
-            localement, exporter les playlists locales vers YT, et même importer
-            des playlists depuis YT.
+            <br />
+            Les utilisateurs peuvent enregistrer des nouveaux groupes, albums,
+            chansons et des playlists.
+            <br />
+            Si un lien YT est fourni, l'application peut télécharger les
+            chansons localement, exporter les playlists locales vers YT, et même
+            importer des playlists depuis YT.
           </v-card-text>
         </v-card>
       </v-col>
@@ -133,15 +134,15 @@
           </v-card-subtitle>
           <v-card-text>
             Application web Python.
-            <br/>
-            L'application permet de télécharger des chansons depuis Youtube,
-            et avec l'aide d'un formulaire ajouter ses métadonnées.
-            <br/>
-            Le traîtement des chansons est fait côté serveur, et l'utilisateur n'a
-            qu'à télécharger la chanson préparée.
-            <br/>
-            Les utilisateurs peuvent voir les dernières chansons téléchargées
-            et vérifier si quelqu'un à déjà fourni les métadonnées pour la chanson
+            <br />
+            L'application permet de télécharger des chansons depuis Youtube, et
+            avec l'aide d'un formulaire ajouter ses métadonnées.
+            <br />
+            Le traîtement des chansons est fait côté serveur, et l'utilisateur
+            n'a qu'à télécharger la chanson préparée.
+            <br />
+            Les utilisateurs peuvent voir les dernières chansons téléchargées et
+            vérifier si quelqu'un à déjà fourni les métadonnées pour la chanson
             qu'ils recherchent.
           </v-card-text>
         </v-card>
@@ -155,7 +156,7 @@
           <v-card-subtitle> Utilise Vue and Vuetify.</v-card-subtitle>
           <v-card-text>
             Site dynamique.
-            <br/>
+            <br />
             Il n'y a pas grande chose à dire, suffit de regarder autour ^^.
           </v-card-text>
         </v-card>
@@ -206,7 +207,9 @@
               <v-list-item-content>Probabilities</v-list-item-content>
             </v-list-item>
             <v-list-item href="/data_2.pdf" target="_blank">
-              <v-list-item-content>Data description and filtering</v-list-item-content>
+              <v-list-item-content
+                >Data description and filtering</v-list-item-content
+              >
             </v-list-item>
           </v-list>
         </v-card>
@@ -221,8 +224,8 @@
         <v-card href="Hacktoberfest.pdf" target="_blank">
           <v-card-title>Hacktoberfest 2020</v-card-title>
           <v-card-text>
-            Évènement annuel open source, qui a comme objectif de soutenir
-            les projets open source et inciter à contribuer.
+            Évènement annuel open source, qui a comme objectif de soutenir les
+            projets open source et inciter à contribuer.
           </v-card-text>
         </v-card>
       </v-col>
