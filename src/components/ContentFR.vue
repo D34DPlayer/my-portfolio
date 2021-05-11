@@ -76,6 +76,27 @@
       </v-timeline-item>
     </v-timeline>
 
+    <h2 id="langs" class="text-h2 pb-5">
+      <router-link to="/#langs">Langues</router-link>
+    </h2>
+    <v-row class="pb-5 px-5 text-h6" justify="center" align-content="center">
+      <v-col class="lang-col">
+        <div class="lang-card"><span>Français :</span>C2</div>
+        <div class="lang-card"><span>Espagnol :</span>C2</div>
+        <div class="lang-card"><span>Anglais :</span>B2</div>
+      </v-col>
+      <v-col class="lang-col">
+        <div class="lang-card"><span>Néerlandais :</span>A2</div>
+        <div class="lang-card"><span>Chinois :</span>A1</div>
+      </v-col>
+      <v-col class="lang-col">
+        <v-img
+          src="https://www.adient.com/-/media/adient/microsites/slovakia/globe.svg"
+          class="globe"
+        ></v-img>
+      </v-col>
+    </v-row>
+
     <h2 id="projects" class="text-h2 pb-5">
       <router-link to="/#projects">Projects</router-link>
     </h2>
