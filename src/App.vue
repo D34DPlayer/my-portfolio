@@ -2,7 +2,7 @@
   <v-app>
     <navbar />
 
-    <v-main v-if="show">
+    <v-main>
       <router-view />
     </v-main>
   </v-app>
@@ -14,7 +14,6 @@ import Navbar from "./components/Navbar";
 export default {
   name: "App",
   components: { Navbar },
-  data: () => ({ show: true }),
   metaInfo() {
     const path = this.$route.path;
     const image = require("@/assets/me.jpg");

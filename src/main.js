@@ -14,4 +14,8 @@ new Vue({
   router,
   vuetify,
   render: (h) => h(App),
+  mounted() {
+    // Tell the prerenderer we are done
+    document.dispatchEvent(new Event("render-event"));
+  },
 }).$mount("#app");

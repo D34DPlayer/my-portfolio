@@ -12,6 +12,7 @@
       </v-col>
       <v-row class="justify-center col-12 col-lg-6">
         <v-img
+          lazy-src="@/assets/me.jpg"
           src="@/assets/me-better.jpg"
           max-width="10rem"
           class="pfp"
