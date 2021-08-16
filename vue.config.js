@@ -13,7 +13,6 @@ const productionPlugins = [
       },
       headless: true,
       args: ["--no-sand-box"],
-      executablePath: process.env.CHROMIUM_PATH,
       renderAfterDocumentEvent: "render-event",
     }),
   }),

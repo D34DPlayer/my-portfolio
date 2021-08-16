@@ -1,12 +1,19 @@
 # build stage
-FROM node:lts-slim as build-stage
+FROM alpine:edge as build-stage
 WORKDIR /app
 ARG VUE_APP_DOMAIN_NAME=localhost
-ARG CHROMIUM_PATH=chromium
+ARG PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 ARG PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
-RUN apt-get -y update &&\
-    apt-get -y install chromium
+RUN apk add --no-cache \
+      chromium \
+      nss \
+      freetype \
+      harfbuzz \
+      ca-certificates \
+      ttf-freefont \
+      nodejs \
+      npm
 
 COPY package*.json ./
 RUN npm install
