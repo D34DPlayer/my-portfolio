@@ -70,6 +70,7 @@ import {
   mdiHumanHandsup,
   mdiLightbulb,
   mdiEarth,
+  mdiBagSuitcase,
 } from "@mdi/js";
 import me from "../assets/me.jpg";
 
@@ -98,22 +99,28 @@ export default {
         id: "#langs",
       },
       {
+        titleEn: "Work Experience",
+        titleFr: "Expérience professionnelle",
+        icon: mdiBagSuitcase,
+        id: "#work",
+      },
+      {
         titleEn: "Projects",
         titleFr: "Projets",
         icon: mdiHammerWrench,
         id: "#projects",
       },
       {
-        titleEn: "Certifications",
-        titleFr: "Certificats",
-        icon: mdiCertificate,
-        id: "#certs",
-      },
-      {
         titleEn: "Activities",
         titleFr: "Activités",
         icon: mdiHumanHandsup,
         id: "#activities",
+      },
+      {
+        titleEn: "Certifications",
+        titleFr: "Certificats",
+        icon: mdiCertificate,
+        id: "#certs",
       },
       /*{
         titleEn: "Hobbies",

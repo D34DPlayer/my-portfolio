@@ -98,10 +98,64 @@
       </v-col>
     </v-row>
 
+    <h2 id="work" class="text-h2 pb-5">
+      <router-link to="/#work">Expérience Professionnelle</router-link>
+    </h2>
+
+    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+      <v-timeline-item color="#e56202">
+        <template v-slot:opposite>
+          <span class="headline font-weight-medium text--secondary">
+            Août 2021
+          </span>
+        </template>
+        <v-card>
+          <v-card-title>Linked Data Event Streams</v-card-title>
+          <v-card-subtitle>UGent</v-card-subtitle>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item color="#e56202">
+        <template v-slot:opposite>
+          <span class="headline font-weight-medium text--secondary">
+            Juillet 2021
+          </span>
+        </template>
+        <v-card
+          href="https://osoc.be/editions/2021/ldes"
+          target="_blank"
+          class="proj-card"
+        >
+          <v-card-title>Open Summer Of Code 2021</v-card-title>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
+
     <h2 id="projects" class="text-h2 pb-5">
       <router-link to="/#projects">Projects</router-link>
     </h2>
     <v-row class="px-5">
+      <v-col cols="12" md="6">
+        <v-card
+          href="https://github.com/D34DPlayer/Monochrome"
+          class="proj-card"
+        >
+          <v-card-title> Monochrome</v-card-title>
+          <v-card-subtitle>Utilise FastAPI, Vue et Vuetify</v-card-subtitle>
+          <v-card-text>
+            Enfin un CMS manga en conditions.
+            <br />
+            Lancez votre propre CMS pour manga avec une simple commande. Une API
+            se charge de tout et le frontend sert simplement ces informations
+            d'une façon propre, ce qui rend la création de nouveaux outils et
+            les modifications triviales.
+            <v-card-actions>
+              <v-btn block href="https://manga.d34d.one" target="_blank"
+                >Demo en ligne</v-btn
+              >
+            </v-card-actions>
+          </v-card-text>
+        </v-card>
+      </v-col>
       <v-col cols="12" md="6">
         <v-card href="https://github.com/AH-REM/discord-noob" class="proj-card">
           <v-card-title> DiscordNoob</v-card-title>
@@ -143,8 +197,6 @@
           </v-card-text>
         </v-card>
       </v-col>
-    </v-row>
-    <v-row class="pb-5 px-5">
       <v-col cols="12" md="6">
         <v-card
           href="https://github.com/D34DPlayer/MuziekDownloader"
@@ -180,6 +232,21 @@
             Site dynamique.
             <br />
             Il n'y a pas grande chose à dire, suffit de regarder autour ^^.
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <h2 id="activities" class="text-h2 py-5">
+      <router-link to="/#activities">Activités</router-link>
+    </h2>
+    <v-row>
+      <v-col cols="4">
+        <v-card href="Hacktoberfest.pdf" target="_blank">
+          <v-card-title>Hacktoberfest 2020</v-card-title>
+          <v-card-text>
+            Évènement annuel open source, qui a comme objectif de soutenir les
+            projets open source et inciter à contribuer.
           </v-card-text>
         </v-card>
       </v-col>
@@ -234,21 +301,6 @@
               >
             </v-list-item>
           </v-list>
-        </v-card>
-      </v-col>
-    </v-row>
-
-    <h2 id="activities" class="text-h2 py-5">
-      <router-link to="/#activities">Activités</router-link>
-    </h2>
-    <v-row>
-      <v-col cols="4">
-        <v-card href="Hacktoberfest.pdf" target="_blank">
-          <v-card-title>Hacktoberfest 2020</v-card-title>
-          <v-card-text>
-            Évènement annuel open source, qui a comme objectif de soutenir les
-            projets open source et inciter à contribuer.
-          </v-card-text>
         </v-card>
       </v-col>
     </v-row>

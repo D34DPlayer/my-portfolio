@@ -1,11 +1,15 @@
 # build stage
-FROM node:lts as build-stage
+FROM node:lts-slim as build-stage
 WORKDIR /app
 ARG VUE_APP_DOMAIN_NAME=localhost
-RUN apt-get update && \
-    apt-get -y install chromium
+ARG CHROMIUM_PATH=chromium
+
+RUN apt-get update &&\
+    apt-get install chromium
+
 COPY package*.json ./
 RUN npm install
+
 COPY . .
 RUN npm run build
 

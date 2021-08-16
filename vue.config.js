@@ -1,4 +1,3 @@
-/*
 const path = require("path");
 
 const PrerenderSpaPlugin = require("prerender-spa-plugin");
@@ -12,16 +11,20 @@ const productionPlugins = [
       inject: {
         foo: "bar",
       },
-      executablePath: "/usr/bin/chromium",
+      headless: true,
+      args: ["--no-sand-box"],
+      executablePath: process.env.CHROMIUM_PATH,
       renderAfterDocumentEvent: "render-event",
     }),
   }),
 ];
-*/
+
+const production = process.env.NODE_ENV == "production";
+
 module.exports = {
   lintOnSave: false,
   transpileDependencies: ["vuetify"],
   configureWebpack: {
-    //plugins: productionPlugins,
+    plugins: production ? productionPlugins : [],
   },
 };
