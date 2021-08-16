@@ -3,6 +3,7 @@ FROM node:lts-slim as build-stage
 WORKDIR /app
 ARG VUE_APP_DOMAIN_NAME=localhost
 ARG CHROMIUM_PATH=chromium
+ARG PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
 RUN apt-get -y update &&\
     apt-get -y install chromium
