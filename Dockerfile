@@ -1,25 +1,13 @@
 # build stage
-FROM alpine:edge as build-stage
+FROM node:lts-slim as build-stage
 WORKDIR /app
-ARG VUE_APP_DOMAIN_NAME=localhost
-ARG PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
-ARG PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ARG DOMAIN_NAME=https://www.d34d.one
 
-RUN apk add --no-cache \
-      chromium \
-      nss \
-      freetype \
-      harfbuzz \
-      ca-certificates \
-      ttf-freefont \
-      nodejs \
-      npm
-
-COPY package*.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn --frozen-lockfile
 
 COPY . .
-RUN npm run build
+RUN yarn build
 
 # production stage
 FROM nginx:1.17

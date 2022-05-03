@@ -1,37 +1,34 @@
 <template>
-  <v-img :src="cover" aspect-ratio="3" :gradient="gradient">
-    <v-row
-      align="end"
-      justify="end"
-      class="fill-height text-right pa-md-5 pa-3 mx-0 flex-column"
-    >
-      <span class="text-h2">Carlos Ruiz Herrera</span>
-      <h1 class="text-h1 colored">{{ header }}</h1>
-    </v-row>
-  </v-img>
+<v-img :src="cover" cover aspect-ratio="3" :gradient="gradient">
+  <v-row
+    align="end"
+    justify="end"
+    class="fill-height text-right pa-md-5 pa-3 mx-0 flex-column"
+  >
+    <span class="text-lg-h2 text-md-h3 text-h5">Carlos Ruiz Herrera</span>
+    <h1 class="text-lg-h1 text-md-h2 text-h4 colored">Full Stack Developer</h1>
+  </v-row>
+</v-img>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed, inject, ref, Ref } from 'vue';
+
 import darkCover from "@/assets/dark.jpg";
 import lightCover from "@/assets/light.jpg";
 
-export default {
-  name: "Header",
-  computed: {
-    cover() {
-      return this.$vuetify.theme.dark ? darkCover : lightCover;
-    },
-    gradient() {
-      let level = this.$vuetify.theme.dark ? 18 : 255;
-      return `to bottom, rgba(0,0,0,0), rgb(${level},${level},${level})`;
-    },
-    header() {
-      return this.$vuetify.lang === "fr"
-        ? "Développeur Full-Stack"
-        : "Full-Stack Developer";
-    },
-  },
-};
+type Theme = "dark" | "light"
+
+const theme = inject("theme", ref("dark") as Ref<Theme>)
+
+const cover = computed(() => {
+  return theme.value == "light" ? lightCover : darkCover
+})
+
+const gradient = computed(() => {
+  let level = theme.value == 'light' ? 255 : 18;
+  return `to bottom, rgba(0,0,0,0), rgb(${level},${level},${level})`;
+})
 </script>
 
 <style scoped>

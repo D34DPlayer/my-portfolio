@@ -1,4 +1,5 @@
 <template>
+<!-- TODO Migrate and add content -->
   <v-container>
     <h2 id="about" class="text-h2 pb-5">
       <router-link to="/#about">À propos de moi</router-link>

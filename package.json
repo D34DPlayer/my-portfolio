@@ -1,50 +1,33 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "my-portfolio-vue3",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "prerender-spa-plugin": "^3.4.0",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuetify": "^2.4.0"
+    "@mdi/font": "5.9.55",
+    "roboto-fontface": "*",
+    "vue": "^3.2.25",
+    "vue-router": "4",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "puppeteer": "^10.0.0",
-    "@mdi/js": "^5.9.55",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "lint-staged": "^9.5.0",
-    "prettier": "^2.2.1",
-    "sass": "^1.32.0",
+    "@mdi/js": "^6.6.96",
+    "@types/webfontloader": "^1.0.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
+    "sass": "^1.38.0",
     "sass-loader": "^10.0.0",
-    "vue-cli-plugin-vuetify": "~2.4.0",
-    "vue-meta": "^2.4.0",
-    "vue-pdf": "^4.2.0",
-    "vue-scrollto": "^2.20.0",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vite-plugin-html": "^3.2.0",
+    "vue-cli-plugin-vuetify": "~2.4.8",
+    "vue-tsc": "^0.29.8",
+    "vuetify-loader": "^2.0.0-alpha.0"
   }
 }

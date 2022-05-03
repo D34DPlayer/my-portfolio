@@ -1,27 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <ContentFR v-if="language === 'fr'" />
-    <ContentEN v-else />
-  </div>
+<Header />
+<content-en />
 </template>
 
-<script>
-import ContentEN from "@/components/ContentEN";
-import ContentFR from "@/components/ContentFR";
-import Header from "@/components/Header";
-
-export default {
-  name: "Home",
-  components: {
-    ContentEN,
-    ContentFR,
-    Header,
-  },
-  computed: {
-    language() {
-      return this.$vuetify.lang;
-    },
-  },
-};
+<script setup lang="ts">
+import ContentEn from "@/components/ContentEn.vue";
+//import ContentFr from "@/components/ContentFr.vue";
+import Header from "@/components/Header.vue";
 </script>
