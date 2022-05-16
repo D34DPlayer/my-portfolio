@@ -82,7 +82,7 @@ const items = [
     desc: "Cyber Security Challenge Belgium",
     totalHours: 15,
     acceptedHours: 10,
-    proof: "/CSCBE.png",
+    proof: "/cscbe.pdf",
   },
   {
     theme: "Web development",
