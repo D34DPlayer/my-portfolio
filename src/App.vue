@@ -1,17 +1,17 @@
 <template>
   <v-app :theme="theme">
     <drawer :theme="theme" @theme="theme = $event" />
-    <v-main style="padding-left: 71px;">
+    <v-main style="padding-left: 72px">
       <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script setup lang="ts">
-import { ref, provide } from 'vue';
-import Drawer from './components/Drawer.vue'
+import { ref, provide } from "vue";
+import Drawer from "./components/Drawer.vue";
 
-const theme = ref("dark")
+const theme = ref("dark");
 
-provide("theme", theme)
+provide("theme", theme);
 </script>

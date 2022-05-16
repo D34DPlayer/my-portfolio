@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        - DOMAIN_NAME=https://www.d34d.fun
+        - DOMAIN_NAME=https://www.d34d.one
     ports:
       - "8081:8080"
     restart: unless-stopped
